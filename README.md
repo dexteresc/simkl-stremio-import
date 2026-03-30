@@ -23,15 +23,15 @@ cp .env.example .env
 
 - **STREMIO_AUTH_KEY** — open [web.stremio.com](https://web.stremio.com), run in console: `JSON.parse(localStorage.getItem("profile")).auth.key`
 - **SIMKL_CLIENT_ID** — register at [simkl.com/settings/developer](https://simkl.com/settings/developer/)
-- **SIMKL_ACCESS_TOKEN** — run `python -m stremio_simkl_sync --simkl-auth`
+- **SIMKL_ACCESS_TOKEN** — run `python sync.py --simkl-auth`
 - **TMDB_API_KEY** *(optional)* — for resolving anime seasons without IMDB IDs
 
 ## Usage
 
 ```bash
 # preview changes
-python -m stremio_simkl_sync --dry-run
+python sync.py --dry-run
 
 # run sync
-python -m stremio_simkl_sync
+python sync.py
 ```
