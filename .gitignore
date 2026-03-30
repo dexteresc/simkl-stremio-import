@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+simkl_token.json
+stremio_token.json
+.pytest_cache/
